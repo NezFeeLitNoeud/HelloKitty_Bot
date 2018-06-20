@@ -1,8 +1,8 @@
 const Discord = require("discord.js");
 // var cleverbot = require("cleverbot.io");
 const client = new Discord.Client();
-// client.login('NDU4NTUzMTA5ODA4MDIxNTA0.DgpUZA.MAcUWePE9E71YezeYJW_jRCz-JU');
-// var bot = new cleverbot('smueDGhPJmtv8R2g','yVtXm9B5gHxiwy16mSfTEaGfwbL3uJL3');
+client.login('TOKEN');
+// var bot = new cleverbot('API_USER','API_KEY');
 // var session = bot.setNick("HelloKitty")
 var prefix = '!'
 
@@ -55,9 +55,9 @@ if (msg.channel.type === "dm") {
  client.on('guildMemberAdd', function(member) {
 
 // Faite attention à changer l'id du serveur par les votres !
-  if(member.guild.channels.exists("id", "457954899393511435")){
+  if(member.guild.channels.exists("id", "ID_Du_Channel")){
     console.log(`Le channel existe`);
-    member.guild.channels.find("id", "457954899393511435").send( member.displayName + 'est dans la place. Cachez vos copines !')
+    member.guild.channels.find("id", "ID_Du_Channel").send( member.displayName + 'est dans la place. Cachez vos copines !')
   } else {
   	console.log("Ce serveur n'existe pas !");
   }
@@ -86,4 +86,4 @@ if (msg.channel.type === "dm") {
 
 
 
-client.login('NDU4NTUzMTA5ODA4MDIxNTA0.DgpUZA.MAcUWePE9E71YezeYJW_jRCz-JU');
+client.login('TOKEN');
